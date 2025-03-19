@@ -25,16 +25,15 @@ import { IoMoon } from "react-icons/io5";
 
 import { Input } from "@/components/ui/input";
 
-import { Upcoming } from "@/components/ui/Upcoming";
+import { Movies_upcoming } from "@/components/Movies_upcoming";
+import { Upcoming } from "@/components/Upcoming";
 
 export default function Home() {
   return (
     <div>
-      <div className="flex flex-col py-[16px] px-[16px] justify-center items-center w-screen h-[59px] border border-black">
-        {" "}
-        <div className="flex h-[36px] w-full items-center justify-between ">
+      <div className="flex flex-col py-[16px] px-[16px] justify-center items-center w-screen h-[59px]">
+        <div className="flex h-[36px] w-screen items-center justify-between ">
           <div className="flex gap-[8px] items-center justify-center">
-            {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16.67"
@@ -61,10 +60,8 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-[12px]">
-            {" "}
             <DropdownMenu>
               <DropdownMenuTrigger>
-                {" "}
                 <Button>
                   <SlArrowDown />
                   Genre
@@ -89,6 +86,7 @@ export default function Home() {
       <div>
         <Upcoming></Upcoming>
       </div>
+      <Movies_upcoming />
 
       <Pagination>
         <PaginationContent>

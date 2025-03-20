@@ -33,12 +33,12 @@ const MovieData = [
 export const Upcoming = ({}) => {
   return (
     <div className="relative w-screen">
-      <Carousel>
-        <CarouselContent>
-          <CarouselItem>
+      <Carousel className="w-full">
+        <CarouselContent className="w-full">
+          <CarouselItem className="w-full">
             {" "}
             <Upcoming_description />
-            <img src={MovieData[0].image}></img>
+            <img src={MovieData[0].image} className="w-full"></img>
           </CarouselItem>
           <CarouselItem>
             {" "}

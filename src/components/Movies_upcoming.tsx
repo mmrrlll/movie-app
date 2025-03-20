@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 export const Movies_upcoming = ({}) => {
-
   const Movie = [
     {
       image:
@@ -65,17 +65,26 @@ export const Movies_upcoming = ({}) => {
     },
   ];
   return (
-    <div className="flex w-screen h-[978px] px-[80px] py-[52px] flex-col items-start">
-      <div className="w-full h-[36px] flex justify-between items-start ">
-        <p>Upcoming</p>
-        <Button>See more</Button>
+    <div className="flex flex-col items-start w-screen px-[80px] py-[52px]">
+      <div className="w-full mb-4 flex justify-between items-center ">
+        <p className="text-2xl text-black font-semibold">Upcoming</p>
+        <Button variant={"noHover"}>
+          See more
+          <ArrowRight/>
+        </Button>
       </div>
-      <div className=" flex-wrap justify-start gap-4 inline-grid grid-cols-5">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 ">
         {Movie.map((Movie, index) => (
-          <div key={index} className="h-[439px] w-[230px] flex flex-col items-start gap-[4px] rounded-lg bg-[#F4F4F5]">
-            <img className="w-[229.73px] h-[340px]" src={Movie.image}></img>
-            <div className="flex p-2 flex-col items-start self-stretch">
-              <div className="flex h-[23px] items-start gap-1 self-stretch">
+          <div
+            key={index}
+            className="flex flex-col items-start gap-2 rounded-lg bg-[#F4F4F5] min-h-[435px]"
+          >
+            <img
+              className="w-full min-h-[340px] rounded-t-lg"
+              src={Movie.image}
+            ></img>
+            <div className="flex p-2 flex-col max-h-[95px]">
+              <div className="flex items-center gap-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

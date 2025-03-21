@@ -1,15 +1,4 @@
 "use client";
-
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
-
 import { Movies_upcoming } from "@/components/Movies_upcoming";
 import { Upcoming } from "@/components/Upcoming";
 import { Popular_movies } from "@/components/Popular_movies";

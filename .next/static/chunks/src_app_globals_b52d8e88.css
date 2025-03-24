@@ -689,10 +689,6 @@
     height: calc(var(--spacing) * 10);
   }
 
-  .h-\[10\] {
-    height: 10px;
-  }
-
   .h-\[20px\] {
     height: 20px;
   }
@@ -781,6 +777,10 @@
     width: 36px;
   }
 
+  .w-\[60px\] {
+    width: 60px;
+  }
+
   .w-\[64px\] {
     width: 64px;
   }
@@ -807,6 +807,10 @@
 
   .w-\[404px\] {
     width: 404px;
+  }
+
+  .w-\[px\] {
+    width: px;
   }
 
   .w-full {

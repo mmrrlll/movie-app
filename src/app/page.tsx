@@ -9,14 +9,14 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <div>
-      <Navigation/>
+      <Navigation />
       <div>
         <Upcoming></Upcoming>
       </div>
       <Movies_upcoming />
-      <Popular_movies/>
-      <Top_rated_movies/>
-      <Footer/>
+      <Popular_movies />
+      <Top_rated_movies />
+      <Footer />
     </div>
   );
 }

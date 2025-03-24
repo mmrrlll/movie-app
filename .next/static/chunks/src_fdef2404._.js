@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_38590dda._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/src_fdef2404._.js", {
 
 "[project]/src/lib/utils.ts [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -92,96 +92,64 @@ __turbopack_context__.s({
     "Movies_upcoming": (()=>Movies_upcoming)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
-"use client";
-;
 ;
 ;
 ;
 const Movies_upcoming = ({})=>{
-    _s();
-    const [upcomingMovies, setUpcomingMovies] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const getUpcomingMovies = async ()=>{
-        try {
-            const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get("https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1&api_key=d67d8bebd0f4ff345f6505c99e9d0289");
-            setUpcomingMovies(data.results);
-        } catch (err) {
-            console.log(err.message);
+    const Movie = [
+        {
+            image: "https://s3-alpha-sig.figma.com/img/6415/2808/0ffbeccc1a7cdd3a5199e0755d66e253?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fCQufcR3am1qiooLQaqM9Q41NfwFPOLbPAZzQ3vVA3ubkL8vXYVlOARoxW3mVGAKW10Or4rEsgbn1We-Uv7tTuXNoCKZySv1bpIdwl683L-HGFQCh2aolanzjTygbJRG8oxQTaOW~juemQwUKxKlVfDrku7eyKv7kCfb8GjtOtzOXMjPUGfQ1cPuDBT-lQ66x3KsLKXsEsvNyS04Nl-XgtKjiFq3J8vWz--Y7SKpB16xhs5medKqDLyR2gKclKWDTQHp2j3nb5xDgNcjumvVKF8BAMHiDyS~EKQBNdHZif7FuEWg4eIGY97oHzVI0GbCsUbWHh0mcj~FV-FZhmU~fQ__",
+            rating: "6.9",
+            title: "Dear Santa"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/4b08/7764/bc03cf6c5fe844d5ce89f9658466dfef?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VxBf6a0UyNNWI2Ef8E9MKlxZyc7jcRh-qGeLDOkVM5XhV1f~sVYxwSFoidjGrQXETt45YTjmIScYqZSvyuzwmi4qgBT5YAPnS9NSSjWBqWpSONfypvg3GL6l6SDn2mxOqJ1hlrtm6BSm8Dxh8Is5UH3D96O91AeEBtziVQkE8UXZxn51XGJbKR8haCM1Y9G~649PPFyWcnVO4BZHnDC31L8sm8a11VDPZDoo4LaP5cLeHgWkb4MO3DeHYsIqG-xMZ4B9yy5ffhL86UEuULXd5okztHFp1lEGdKTrARjAVR-4~5O5RGFjsm1Hr7G9ACqNPXJZD9dtt8ixIK8w0D7Zlw__",
+            rating: "6.9",
+            title: "How to Train Your Dragon Live Action"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/7aa1/1575/96c5c5026e3cccbd4a9ca91b9d63dc7a?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TVUi4evCaWv5DXCkFcCXhK5a7XqGLRmAZ46uJH1yM-Fvt~EQO~x3pvBs-s1NXOhAYDjpUlbOSlxEvu0qGD57d4VrRTCnAduwbs0mxFf0XrFpCnOA5Yt0Z3zOCtbnrr4uPJc9aI~O75AITvlCwxdGsFkTgJfdO9nna51yGU-NKXwsjijsbuumFxUJmGULzs5dUbvEW-zBHN2ndMv~eM2QSY0CidjLVlvxQ2il8o8ppwYjVcrskJdifcewBLBgDJTkSID-kb~gxp2lj1Kt75UebcktxFj6yKftUrfgywB1-slsmVEV0J1DftM00LXqF9Y2T1EGuq8XFxug-QkftbReyg__",
+            rating: "6.9",
+            title: "Alien Romulus"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/a2ea/3dd2/e396dc1c5e4ace3bda976b474aaef0b3?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LmSRrZdSQ4fvHueiig5LxUblDy9QDnu6n0E9qjEYU4SB1cC4ZxO0nfnzoSC5nPJkfjMlrHY1SdUB6~Eb0heV1S31tD~18qCRsatCoxrbEFMGCmeTXRvtoU~S6ICXR6bplFR45mNqSKQDvUNEkIHEYMF~h0ryW9VulLl9XoZxBQy~z113TYtY9aYz7ATv~xiwah4fux~v7jAZbGzBF1Xv9uEx4IrN-zV0HD8lS9mA704MwbTY3V7eOie9kKJzEErMVaI5n6zP~b1GkYhAH7kolvToDYZINF6Z2~iL~M7YVfB8V2vVuqkM7nqXzqKRjMCFjUc0u0sIfhOMwehMnwwh-w__",
+            rating: "6.9",
+            title: "From the Ashes"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/4225/7c9e/0fafe04642928fbdc70a93ae0f01002d?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cbb2m1HJmmL7XhKZeu0jrrb-Vzvg8huUbr6E6Abr6tD8f7srS6WVZMaBJyOs1XPkOFTFu-G6O21HG4dUFsnqeqvu-046LbBZcBPe54gSKZMRLhFz40LI0RYs5ZBxMZ~MLIbSoLj-u1c~vymdOCj6RQz-UXndfwRAnHB1r5fDhUDX4MPuvVK5yk5fj2i1iYl-g19Qa4q6aof6xsuLjVKfJyK3-ruSMev5YhAH1z26Z--4wtBHMaJm98J3AjnmXG3srTeVUMimrobyQ4pFtg8L9IQUijLSoFovNwLAfz6Q5DtAz~Ml~V5aY64jdFgOFLv-c0-M8WWT8iuQXYnE3Q8Znw__",
+            rating: "6.9",
+            title: "Space Dogg"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/d9b1/c0d7/d14a24b806271aee27997170978ff626?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MJLPlmjH-ZH2cPWHRlzeF2mkO-FENUHpt5JvN3K29xAFT8Ww5PaT1vkoH2~s7S1o9PdBVL7WIUD3SVXoWqYeNXaULj7DL~zKZAGEY7J9sQy9SpBkU-6KfwoKqKgBqd9WpjV3zP884SLjBR1uk7JFbKaS9dM6aLJa8ihx17PmQiYtynIfu6zgOSnQ1NpnzO5Sy~nhXUWqsq4HGtOHSuUOHBpazHidklA7dNz1FmnNU~o2HrjAmxvXFObmJdfJR4Yle0Ke7t749UQLDp5w~vl~ZnXL9KeJgrenXu5w~TZtYTJj024q0GblLRoHG4yYg65BGWHoz0KVQFVsrh-KctQZIA__",
+            rating: "6.9",
+            title: "The Order"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/9e65/3e1b/e01fc9c4092dfdecd24369e2487d8635?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=W2zT-Cq57KFy0vpF5PUJ--WXF8LCLBEqBnQ8PUkVItEjV0W2RFX368cnDVg4nYlHFRKdgTAyX8jwfodIznV0XtAlkL9nrD-jSCOILZFYSbpv4pmd6zZGmjya2hXR21GMBq3ZF39oRTbDo1J7YFUNADw~Wb~TL8SBslDL7FG3Zjfuub2ASjtKbDhQe0gx5idbG9KjtBRJi4NPTZ7a4aGV8YLcwrXqWJSlulSl35dT0iBxmIzvE6syvE95yD3vqEyYX9V8RGtli0zX92gtlPN~7JKxwLgh2qEPC-ESXomLc~pyPTHM0DW5To8DX6TmdIuz~CObhMgjLzncegNSzBeEVw__",
+            rating: "6.9",
+            title: "Y2K"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/b356/27f6/7090bf8bfd9ce9490b6575d8d0114025?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JhRdxrMQ8UXJBqrfPkBs5wRrOK~GbcdwRWvpbW3mH1qzcV1dHl6IdvIJsVurUJEM0Y5G1d2MDqM~B5dcOuSPx9aPwcjYuEUpcW~5flXYdSkvbDLq8vGEOtH5PKEsZ7W3V7My6MZIIxn84Z5JljiqkMN9NDv4JSFFh5Q1~Ld7RtGR0ViB-Ml8o2v6afq2W0St5lwybR3W4CI93MBuPqGjIirCfvUoFF~EPRARZhfgfCI40svObKDRjHIQ20JAxOsbhYq0TyeTuS2L7H07h3KeaGEq-VxdA2IImbQsISuhKvqjt-m0rUknDmrhlpqJ57mODEPqSEqMCOOkKYbo4Omq5A__",
+            rating: "6.9",
+            title: "Solo Leveling: ReAwakening"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/3272/77d4/dd6fe464242bf3ceb00cbf7c51bd7f42?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qQrGMobH~gVpKUJMWrAO2IVuhXlHJSlGXyXIgxtHflEcwC2aATPKeglP7jgxCzDdw-MOD66OFKOd1qJRKlzVQpW5v2gcCcYaCSKSztYeSfLQjxL-14O8kBYJGsZ58E4K6Fd3k4L1v81thwoCLgP9UaccZg2vARvcSYyetLS5hVmJAS9yPZun4w1wOGtgbkm-kDlPo6GVGg9oWCKtczCiJ0xdPRsxbTMLeRWZodHCEyTfMmiIa7hpNpIxcXihtvW3y7-FfT7~SzXlEXi-JefqtDZ4qn9u5~VDjZ6v9fWvaWAXsdmUVxQdqpYuhYJMfuM8y561-vH~3qnYMbrEcfl0Gw__",
+            rating: "6.9",
+            title: "Get Away"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/1a78/359a/45da022f45cbd49977b6b63d7ecfb7c8?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hngxFLglxhjir1xLXb2OvqA6i~gjzaI760BFiOjFM6YsKvuvgLrth42FCmhEWtP~bWQjM6cW3QrLLP-wnJeV-R~p6shS5--AxeeT-~gxccu3LD1j46jpvYKXsc8v1Z1kZwuCeWc0DzrEf~GPlbPzHT6zvYb0bfp2-2nWoVLYGL8x-p8OHdGk7Lu30S3pQDX12-Y59KuFZFexa2YNb1ODsnXmS3UjXnNcmDpBYIAXNXZIXvfuLXlMJEoETtGXaDb8HjTRS2j5atE12qFYNbyzDx4-mq8E630OQrpXcwCW1SaUXVA3SaZUCh8qjhJbRekOX5MmnOZ3LRoPU6OiS1a5BA__",
+            rating: "6.9",
+            title: "Sonic the Hedgehog 3"
         }
-    };
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Movies_upcoming.useEffect": ()=>{
-            getUpcomingMovies();
-        }
-    }["Movies_upcoming.useEffect"], []);
-    console.log(upcomingMovies);
-    // const Movie = [
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/6415/2808/0ffbeccc1a7cdd3a5199e0755d66e253?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fCQufcR3am1qiooLQaqM9Q41NfwFPOLbPAZzQ3vVA3ubkL8vXYVlOARoxW3mVGAKW10Or4rEsgbn1We-Uv7tTuXNoCKZySv1bpIdwl683L-HGFQCh2aolanzjTygbJRG8oxQTaOW~juemQwUKxKlVfDrku7eyKv7kCfb8GjtOtzOXMjPUGfQ1cPuDBT-lQ66x3KsLKXsEsvNyS04Nl-XgtKjiFq3J8vWz--Y7SKpB16xhs5medKqDLyR2gKclKWDTQHp2j3nb5xDgNcjumvVKF8BAMHiDyS~EKQBNdHZif7FuEWg4eIGY97oHzVI0GbCsUbWHh0mcj~FV-FZhmU~fQ__",
-    //     rating: "6.9",
-    //     title: "Dear Santa",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/4b08/7764/bc03cf6c5fe844d5ce89f9658466dfef?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VxBf6a0UyNNWI2Ef8E9MKlxZyc7jcRh-qGeLDOkVM5XhV1f~sVYxwSFoidjGrQXETt45YTjmIScYqZSvyuzwmi4qgBT5YAPnS9NSSjWBqWpSONfypvg3GL6l6SDn2mxOqJ1hlrtm6BSm8Dxh8Is5UH3D96O91AeEBtziVQkE8UXZxn51XGJbKR8haCM1Y9G~649PPFyWcnVO4BZHnDC31L8sm8a11VDPZDoo4LaP5cLeHgWkb4MO3DeHYsIqG-xMZ4B9yy5ffhL86UEuULXd5okztHFp1lEGdKTrARjAVR-4~5O5RGFjsm1Hr7G9ACqNPXJZD9dtt8ixIK8w0D7Zlw__",
-    //     rating: "6.9",
-    //     title: "How to Train Your Dragon Live Action",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/7aa1/1575/96c5c5026e3cccbd4a9ca91b9d63dc7a?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TVUi4evCaWv5DXCkFcCXhK5a7XqGLRmAZ46uJH1yM-Fvt~EQO~x3pvBs-s1NXOhAYDjpUlbOSlxEvu0qGD57d4VrRTCnAduwbs0mxFf0XrFpCnOA5Yt0Z3zOCtbnrr4uPJc9aI~O75AITvlCwxdGsFkTgJfdO9nna51yGU-NKXwsjijsbuumFxUJmGULzs5dUbvEW-zBHN2ndMv~eM2QSY0CidjLVlvxQ2il8o8ppwYjVcrskJdifcewBLBgDJTkSID-kb~gxp2lj1Kt75UebcktxFj6yKftUrfgywB1-slsmVEV0J1DftM00LXqF9Y2T1EGuq8XFxug-QkftbReyg__",
-    //     rating: "6.9",
-    //     title: "Alien Romulus",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/a2ea/3dd2/e396dc1c5e4ace3bda976b474aaef0b3?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LmSRrZdSQ4fvHueiig5LxUblDy9QDnu6n0E9qjEYU4SB1cC4ZxO0nfnzoSC5nPJkfjMlrHY1SdUB6~Eb0heV1S31tD~18qCRsatCoxrbEFMGCmeTXRvtoU~S6ICXR6bplFR45mNqSKQDvUNEkIHEYMF~h0ryW9VulLl9XoZxBQy~z113TYtY9aYz7ATv~xiwah4fux~v7jAZbGzBF1Xv9uEx4IrN-zV0HD8lS9mA704MwbTY3V7eOie9kKJzEErMVaI5n6zP~b1GkYhAH7kolvToDYZINF6Z2~iL~M7YVfB8V2vVuqkM7nqXzqKRjMCFjUc0u0sIfhOMwehMnwwh-w__",
-    //     rating: "6.9",
-    //     title: "From the Ashes",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/4225/7c9e/0fafe04642928fbdc70a93ae0f01002d?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cbb2m1HJmmL7XhKZeu0jrrb-Vzvg8huUbr6E6Abr6tD8f7srS6WVZMaBJyOs1XPkOFTFu-G6O21HG4dUFsnqeqvu-046LbBZcBPe54gSKZMRLhFz40LI0RYs5ZBxMZ~MLIbSoLj-u1c~vymdOCj6RQz-UXndfwRAnHB1r5fDhUDX4MPuvVK5yk5fj2i1iYl-g19Qa4q6aof6xsuLjVKfJyK3-ruSMev5YhAH1z26Z--4wtBHMaJm98J3AjnmXG3srTeVUMimrobyQ4pFtg8L9IQUijLSoFovNwLAfz6Q5DtAz~Ml~V5aY64jdFgOFLv-c0-M8WWT8iuQXYnE3Q8Znw__",
-    //     rating: "6.9",
-    //     title: "Space Dogg",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/d9b1/c0d7/d14a24b806271aee27997170978ff626?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MJLPlmjH-ZH2cPWHRlzeF2mkO-FENUHpt5JvN3K29xAFT8Ww5PaT1vkoH2~s7S1o9PdBVL7WIUD3SVXoWqYeNXaULj7DL~zKZAGEY7J9sQy9SpBkU-6KfwoKqKgBqd9WpjV3zP884SLjBR1uk7JFbKaS9dM6aLJa8ihx17PmQiYtynIfu6zgOSnQ1NpnzO5Sy~nhXUWqsq4HGtOHSuUOHBpazHidklA7dNz1FmnNU~o2HrjAmxvXFObmJdfJR4Yle0Ke7t749UQLDp5w~vl~ZnXL9KeJgrenXu5w~TZtYTJj024q0GblLRoHG4yYg65BGWHoz0KVQFVsrh-KctQZIA__",
-    //     rating: "6.9",
-    //     title: "The Order",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/9e65/3e1b/e01fc9c4092dfdecd24369e2487d8635?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=W2zT-Cq57KFy0vpF5PUJ--WXF8LCLBEqBnQ8PUkVItEjV0W2RFX368cnDVg4nYlHFRKdgTAyX8jwfodIznV0XtAlkL9nrD-jSCOILZFYSbpv4pmd6zZGmjya2hXR21GMBq3ZF39oRTbDo1J7YFUNADw~Wb~TL8SBslDL7FG3Zjfuub2ASjtKbDhQe0gx5idbG9KjtBRJi4NPTZ7a4aGV8YLcwrXqWJSlulSl35dT0iBxmIzvE6syvE95yD3vqEyYX9V8RGtli0zX92gtlPN~7JKxwLgh2qEPC-ESXomLc~pyPTHM0DW5To8DX6TmdIuz~CObhMgjLzncegNSzBeEVw__",
-    //     rating: "6.9",
-    //     title: "Y2K",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/b356/27f6/7090bf8bfd9ce9490b6575d8d0114025?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JhRdxrMQ8UXJBqrfPkBs5wRrOK~GbcdwRWvpbW3mH1qzcV1dHl6IdvIJsVurUJEM0Y5G1d2MDqM~B5dcOuSPx9aPwcjYuEUpcW~5flXYdSkvbDLq8vGEOtH5PKEsZ7W3V7My6MZIIxn84Z5JljiqkMN9NDv4JSFFh5Q1~Ld7RtGR0ViB-Ml8o2v6afq2W0St5lwybR3W4CI93MBuPqGjIirCfvUoFF~EPRARZhfgfCI40svObKDRjHIQ20JAxOsbhYq0TyeTuS2L7H07h3KeaGEq-VxdA2IImbQsISuhKvqjt-m0rUknDmrhlpqJ57mODEPqSEqMCOOkKYbo4Omq5A__",
-    //     rating: "6.9",
-    //     title: "Solo Leveling: ReAwakening",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/3272/77d4/dd6fe464242bf3ceb00cbf7c51bd7f42?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qQrGMobH~gVpKUJMWrAO2IVuhXlHJSlGXyXIgxtHflEcwC2aATPKeglP7jgxCzDdw-MOD66OFKOd1qJRKlzVQpW5v2gcCcYaCSKSztYeSfLQjxL-14O8kBYJGsZ58E4K6Fd3k4L1v81thwoCLgP9UaccZg2vARvcSYyetLS5hVmJAS9yPZun4w1wOGtgbkm-kDlPo6GVGg9oWCKtczCiJ0xdPRsxbTMLeRWZodHCEyTfMmiIa7hpNpIxcXihtvW3y7-FfT7~SzXlEXi-JefqtDZ4qn9u5~VDjZ6v9fWvaWAXsdmUVxQdqpYuhYJMfuM8y561-vH~3qnYMbrEcfl0Gw__",
-    //     rating: "6.9",
-    //     title: "Get Away",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/1a78/359a/45da022f45cbd49977b6b63d7ecfb7c8?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hngxFLglxhjir1xLXb2OvqA6i~gjzaI760BFiOjFM6YsKvuvgLrth42FCmhEWtP~bWQjM6cW3QrLLP-wnJeV-R~p6shS5--AxeeT-~gxccu3LD1j46jpvYKXsc8v1Z1kZwuCeWc0DzrEf~GPlbPzHT6zvYb0bfp2-2nWoVLYGL8x-p8OHdGk7Lu30S3pQDX12-Y59KuFZFexa2YNb1ODsnXmS3UjXnNcmDpBYIAXNXZIXvfuLXlMJEoETtGXaDb8HjTRS2j5atE12qFYNbyzDx4-mq8E630OQrpXcwCW1SaUXVA3SaZUCh8qjhJbRekOX5MmnOZ3LRoPU6OiS1a5BA__",
-    //     rating: "6.9",
-    //     title: "Sonic the Hedgehog 3",
-    //   },
-    // ];
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col items-start w-screen px-[80px] py-[52px]",
         children: [
@@ -193,7 +161,7 @@ const Movies_upcoming = ({})=>{
                         children: "Upcoming"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Movies_upcoming.tsx",
-                        lineNumber: 93,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -202,32 +170,32 @@ const Movies_upcoming = ({})=>{
                             "See more",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {}, void 0, false, {
                                 fileName: "[project]/src/components/Movies_upcoming.tsx",
-                                lineNumber: 96,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Movies_upcoming.tsx",
-                        lineNumber: 94,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Movies_upcoming.tsx",
-                lineNumber: 92,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: " grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 ",
-                children: upcomingMovies.slice(0, 10).map((value, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: Movie.map((Movie, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col items-start gap-2 rounded-lg bg-[#F4F4F5] min-h-[435px]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                 className: "w-full min-h-[340px] rounded-t-lg",
-                                src: `https://image.tmdb.org/t/p/w300${value.backdrop_path}`
+                                src: Movie.image
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Movies_upcoming.tsx",
-                                lineNumber: 105,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -250,69 +218,68 @@ const Movies_upcoming = ({})=>{
                                                     "stroke-linejoin": "round"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Movies_upcoming.tsx",
-                                                    lineNumber: 118,
+                                                    lineNumber: 95,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Movies_upcoming.tsx",
-                                                lineNumber: 111,
+                                                lineNumber: 88,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: [
-                                                    value.vote_average,
+                                                    Movie.rating,
                                                     "/10"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Movies_upcoming.tsx",
-                                                lineNumber: 126,
+                                                lineNumber: 103,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Movies_upcoming.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-[18px] font-normal text-[#09090B]",
-                                            children: value.title
+                                            children: Movie.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Movies_upcoming.tsx",
-                                            lineNumber: 129,
+                                            lineNumber: 106,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Movies_upcoming.tsx",
-                                        lineNumber: 128,
+                                        lineNumber: 105,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Movies_upcoming.tsx",
-                                lineNumber: 109,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/src/components/Movies_upcoming.tsx",
-                        lineNumber: 101,
+                        lineNumber: 78,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Movies_upcoming.tsx",
-                lineNumber: 99,
+                lineNumber: 76,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Movies_upcoming.tsx",
-        lineNumber: 91,
+        lineNumber: 68,
         columnNumber: 5
     }, this);
 };
-_s(Movies_upcoming, "Yb/vKRy/MGUH+NQanFbzsJTU/KM=");
 _c = Movies_upcoming;
 var _c;
 __turbopack_context__.k.register(_c, "Movies_upcoming");
@@ -906,96 +873,64 @@ __turbopack_context__.s({
     "Popular_movies": (()=>Popular_movies)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
-"use client";
-;
 ;
 ;
 ;
 const Popular_movies = ({})=>{
-    _s();
-    const [popularMovies, setPopularMovies] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const getPopularMovies = async ()=>{
-        try {
-            const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get("https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=d67d8bebd0f4ff345f6505c99e9d0289");
-            setPopularMovies(data.results);
-        } catch (err) {
-            console.log(err.message);
+    const Movie = [
+        {
+            image: "https://s3-alpha-sig.figma.com/img/6415/2808/0ffbeccc1a7cdd3a5199e0755d66e253?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fCQufcR3am1qiooLQaqM9Q41NfwFPOLbPAZzQ3vVA3ubkL8vXYVlOARoxW3mVGAKW10Or4rEsgbn1We-Uv7tTuXNoCKZySv1bpIdwl683L-HGFQCh2aolanzjTygbJRG8oxQTaOW~juemQwUKxKlVfDrku7eyKv7kCfb8GjtOtzOXMjPUGfQ1cPuDBT-lQ66x3KsLKXsEsvNyS04Nl-XgtKjiFq3J8vWz--Y7SKpB16xhs5medKqDLyR2gKclKWDTQHp2j3nb5xDgNcjumvVKF8BAMHiDyS~EKQBNdHZif7FuEWg4eIGY97oHzVI0GbCsUbWHh0mcj~FV-FZhmU~fQ__",
+            rating: "6.9",
+            title: "Dear Santa"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/4b08/7764/bc03cf6c5fe844d5ce89f9658466dfef?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VxBf6a0UyNNWI2Ef8E9MKlxZyc7jcRh-qGeLDOkVM5XhV1f~sVYxwSFoidjGrQXETt45YTjmIScYqZSvyuzwmi4qgBT5YAPnS9NSSjWBqWpSONfypvg3GL6l6SDn2mxOqJ1hlrtm6BSm8Dxh8Is5UH3D96O91AeEBtziVQkE8UXZxn51XGJbKR8haCM1Y9G~649PPFyWcnVO4BZHnDC31L8sm8a11VDPZDoo4LaP5cLeHgWkb4MO3DeHYsIqG-xMZ4B9yy5ffhL86UEuULXd5okztHFp1lEGdKTrARjAVR-4~5O5RGFjsm1Hr7G9ACqNPXJZD9dtt8ixIK8w0D7Zlw__",
+            rating: "6.9",
+            title: "How to Train Your Dragon Live Action"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/7aa1/1575/96c5c5026e3cccbd4a9ca91b9d63dc7a?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TVUi4evCaWv5DXCkFcCXhK5a7XqGLRmAZ46uJH1yM-Fvt~EQO~x3pvBs-s1NXOhAYDjpUlbOSlxEvu0qGD57d4VrRTCnAduwbs0mxFf0XrFpCnOA5Yt0Z3zOCtbnrr4uPJc9aI~O75AITvlCwxdGsFkTgJfdO9nna51yGU-NKXwsjijsbuumFxUJmGULzs5dUbvEW-zBHN2ndMv~eM2QSY0CidjLVlvxQ2il8o8ppwYjVcrskJdifcewBLBgDJTkSID-kb~gxp2lj1Kt75UebcktxFj6yKftUrfgywB1-slsmVEV0J1DftM00LXqF9Y2T1EGuq8XFxug-QkftbReyg__",
+            rating: "6.9",
+            title: "Alien Romulus"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/a2ea/3dd2/e396dc1c5e4ace3bda976b474aaef0b3?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LmSRrZdSQ4fvHueiig5LxUblDy9QDnu6n0E9qjEYU4SB1cC4ZxO0nfnzoSC5nPJkfjMlrHY1SdUB6~Eb0heV1S31tD~18qCRsatCoxrbEFMGCmeTXRvtoU~S6ICXR6bplFR45mNqSKQDvUNEkIHEYMF~h0ryW9VulLl9XoZxBQy~z113TYtY9aYz7ATv~xiwah4fux~v7jAZbGzBF1Xv9uEx4IrN-zV0HD8lS9mA704MwbTY3V7eOie9kKJzEErMVaI5n6zP~b1GkYhAH7kolvToDYZINF6Z2~iL~M7YVfB8V2vVuqkM7nqXzqKRjMCFjUc0u0sIfhOMwehMnwwh-w__",
+            rating: "6.9",
+            title: "From the Ashes"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/4225/7c9e/0fafe04642928fbdc70a93ae0f01002d?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cbb2m1HJmmL7XhKZeu0jrrb-Vzvg8huUbr6E6Abr6tD8f7srS6WVZMaBJyOs1XPkOFTFu-G6O21HG4dUFsnqeqvu-046LbBZcBPe54gSKZMRLhFz40LI0RYs5ZBxMZ~MLIbSoLj-u1c~vymdOCj6RQz-UXndfwRAnHB1r5fDhUDX4MPuvVK5yk5fj2i1iYl-g19Qa4q6aof6xsuLjVKfJyK3-ruSMev5YhAH1z26Z--4wtBHMaJm98J3AjnmXG3srTeVUMimrobyQ4pFtg8L9IQUijLSoFovNwLAfz6Q5DtAz~Ml~V5aY64jdFgOFLv-c0-M8WWT8iuQXYnE3Q8Znw__",
+            rating: "6.9",
+            title: "Space Dogg"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/d9b1/c0d7/d14a24b806271aee27997170978ff626?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MJLPlmjH-ZH2cPWHRlzeF2mkO-FENUHpt5JvN3K29xAFT8Ww5PaT1vkoH2~s7S1o9PdBVL7WIUD3SVXoWqYeNXaULj7DL~zKZAGEY7J9sQy9SpBkU-6KfwoKqKgBqd9WpjV3zP884SLjBR1uk7JFbKaS9dM6aLJa8ihx17PmQiYtynIfu6zgOSnQ1NpnzO5Sy~nhXUWqsq4HGtOHSuUOHBpazHidklA7dNz1FmnNU~o2HrjAmxvXFObmJdfJR4Yle0Ke7t749UQLDp5w~vl~ZnXL9KeJgrenXu5w~TZtYTJj024q0GblLRoHG4yYg65BGWHoz0KVQFVsrh-KctQZIA__",
+            rating: "6.9",
+            title: "The Order"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/9e65/3e1b/e01fc9c4092dfdecd24369e2487d8635?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=W2zT-Cq57KFy0vpF5PUJ--WXF8LCLBEqBnQ8PUkVItEjV0W2RFX368cnDVg4nYlHFRKdgTAyX8jwfodIznV0XtAlkL9nrD-jSCOILZFYSbpv4pmd6zZGmjya2hXR21GMBq3ZF39oRTbDo1J7YFUNADw~Wb~TL8SBslDL7FG3Zjfuub2ASjtKbDhQe0gx5idbG9KjtBRJi4NPTZ7a4aGV8YLcwrXqWJSlulSl35dT0iBxmIzvE6syvE95yD3vqEyYX9V8RGtli0zX92gtlPN~7JKxwLgh2qEPC-ESXomLc~pyPTHM0DW5To8DX6TmdIuz~CObhMgjLzncegNSzBeEVw__",
+            rating: "6.9",
+            title: "Y2K"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/b356/27f6/7090bf8bfd9ce9490b6575d8d0114025?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JhRdxrMQ8UXJBqrfPkBs5wRrOK~GbcdwRWvpbW3mH1qzcV1dHl6IdvIJsVurUJEM0Y5G1d2MDqM~B5dcOuSPx9aPwcjYuEUpcW~5flXYdSkvbDLq8vGEOtH5PKEsZ7W3V7My6MZIIxn84Z5JljiqkMN9NDv4JSFFh5Q1~Ld7RtGR0ViB-Ml8o2v6afq2W0St5lwybR3W4CI93MBuPqGjIirCfvUoFF~EPRARZhfgfCI40svObKDRjHIQ20JAxOsbhYq0TyeTuS2L7H07h3KeaGEq-VxdA2IImbQsISuhKvqjt-m0rUknDmrhlpqJ57mODEPqSEqMCOOkKYbo4Omq5A__",
+            rating: "6.9",
+            title: "Solo Leveling: ReAwakening"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/3272/77d4/dd6fe464242bf3ceb00cbf7c51bd7f42?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qQrGMobH~gVpKUJMWrAO2IVuhXlHJSlGXyXIgxtHflEcwC2aATPKeglP7jgxCzDdw-MOD66OFKOd1qJRKlzVQpW5v2gcCcYaCSKSztYeSfLQjxL-14O8kBYJGsZ58E4K6Fd3k4L1v81thwoCLgP9UaccZg2vARvcSYyetLS5hVmJAS9yPZun4w1wOGtgbkm-kDlPo6GVGg9oWCKtczCiJ0xdPRsxbTMLeRWZodHCEyTfMmiIa7hpNpIxcXihtvW3y7-FfT7~SzXlEXi-JefqtDZ4qn9u5~VDjZ6v9fWvaWAXsdmUVxQdqpYuhYJMfuM8y561-vH~3qnYMbrEcfl0Gw__",
+            rating: "6.9",
+            title: "Get Away"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/1a78/359a/45da022f45cbd49977b6b63d7ecfb7c8?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hngxFLglxhjir1xLXb2OvqA6i~gjzaI760BFiOjFM6YsKvuvgLrth42FCmhEWtP~bWQjM6cW3QrLLP-wnJeV-R~p6shS5--AxeeT-~gxccu3LD1j46jpvYKXsc8v1Z1kZwuCeWc0DzrEf~GPlbPzHT6zvYb0bfp2-2nWoVLYGL8x-p8OHdGk7Lu30S3pQDX12-Y59KuFZFexa2YNb1ODsnXmS3UjXnNcmDpBYIAXNXZIXvfuLXlMJEoETtGXaDb8HjTRS2j5atE12qFYNbyzDx4-mq8E630OQrpXcwCW1SaUXVA3SaZUCh8qjhJbRekOX5MmnOZ3LRoPU6OiS1a5BA__",
+            rating: "6.9",
+            title: "Sonic the Hedgehog 3"
         }
-    };
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Popular_movies.useEffect": ()=>{
-            getPopularMovies();
-        }
-    }["Popular_movies.useEffect"], []);
-    console.log(popularMovies);
-    // const Movie = [
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/6415/2808/0ffbeccc1a7cdd3a5199e0755d66e253?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fCQufcR3am1qiooLQaqM9Q41NfwFPOLbPAZzQ3vVA3ubkL8vXYVlOARoxW3mVGAKW10Or4rEsgbn1We-Uv7tTuXNoCKZySv1bpIdwl683L-HGFQCh2aolanzjTygbJRG8oxQTaOW~juemQwUKxKlVfDrku7eyKv7kCfb8GjtOtzOXMjPUGfQ1cPuDBT-lQ66x3KsLKXsEsvNyS04Nl-XgtKjiFq3J8vWz--Y7SKpB16xhs5medKqDLyR2gKclKWDTQHp2j3nb5xDgNcjumvVKF8BAMHiDyS~EKQBNdHZif7FuEWg4eIGY97oHzVI0GbCsUbWHh0mcj~FV-FZhmU~fQ__",
-    //     rating: "6.9",
-    //     title: "Dear Santa",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/4b08/7764/bc03cf6c5fe844d5ce89f9658466dfef?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VxBf6a0UyNNWI2Ef8E9MKlxZyc7jcRh-qGeLDOkVM5XhV1f~sVYxwSFoidjGrQXETt45YTjmIScYqZSvyuzwmi4qgBT5YAPnS9NSSjWBqWpSONfypvg3GL6l6SDn2mxOqJ1hlrtm6BSm8Dxh8Is5UH3D96O91AeEBtziVQkE8UXZxn51XGJbKR8haCM1Y9G~649PPFyWcnVO4BZHnDC31L8sm8a11VDPZDoo4LaP5cLeHgWkb4MO3DeHYsIqG-xMZ4B9yy5ffhL86UEuULXd5okztHFp1lEGdKTrARjAVR-4~5O5RGFjsm1Hr7G9ACqNPXJZD9dtt8ixIK8w0D7Zlw__",
-    //     rating: "6.9",
-    //     title: "How to Train Your Dragon Live Action",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/7aa1/1575/96c5c5026e3cccbd4a9ca91b9d63dc7a?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TVUi4evCaWv5DXCkFcCXhK5a7XqGLRmAZ46uJH1yM-Fvt~EQO~x3pvBs-s1NXOhAYDjpUlbOSlxEvu0qGD57d4VrRTCnAduwbs0mxFf0XrFpCnOA5Yt0Z3zOCtbnrr4uPJc9aI~O75AITvlCwxdGsFkTgJfdO9nna51yGU-NKXwsjijsbuumFxUJmGULzs5dUbvEW-zBHN2ndMv~eM2QSY0CidjLVlvxQ2il8o8ppwYjVcrskJdifcewBLBgDJTkSID-kb~gxp2lj1Kt75UebcktxFj6yKftUrfgywB1-slsmVEV0J1DftM00LXqF9Y2T1EGuq8XFxug-QkftbReyg__",
-    //     rating: "6.9",
-    //     title: "Alien Romulus",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/a2ea/3dd2/e396dc1c5e4ace3bda976b474aaef0b3?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LmSRrZdSQ4fvHueiig5LxUblDy9QDnu6n0E9qjEYU4SB1cC4ZxO0nfnzoSC5nPJkfjMlrHY1SdUB6~Eb0heV1S31tD~18qCRsatCoxrbEFMGCmeTXRvtoU~S6ICXR6bplFR45mNqSKQDvUNEkIHEYMF~h0ryW9VulLl9XoZxBQy~z113TYtY9aYz7ATv~xiwah4fux~v7jAZbGzBF1Xv9uEx4IrN-zV0HD8lS9mA704MwbTY3V7eOie9kKJzEErMVaI5n6zP~b1GkYhAH7kolvToDYZINF6Z2~iL~M7YVfB8V2vVuqkM7nqXzqKRjMCFjUc0u0sIfhOMwehMnwwh-w__",
-    //     rating: "6.9",
-    //     title: "From the Ashes",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/4225/7c9e/0fafe04642928fbdc70a93ae0f01002d?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cbb2m1HJmmL7XhKZeu0jrrb-Vzvg8huUbr6E6Abr6tD8f7srS6WVZMaBJyOs1XPkOFTFu-G6O21HG4dUFsnqeqvu-046LbBZcBPe54gSKZMRLhFz40LI0RYs5ZBxMZ~MLIbSoLj-u1c~vymdOCj6RQz-UXndfwRAnHB1r5fDhUDX4MPuvVK5yk5fj2i1iYl-g19Qa4q6aof6xsuLjVKfJyK3-ruSMev5YhAH1z26Z--4wtBHMaJm98J3AjnmXG3srTeVUMimrobyQ4pFtg8L9IQUijLSoFovNwLAfz6Q5DtAz~Ml~V5aY64jdFgOFLv-c0-M8WWT8iuQXYnE3Q8Znw__",
-    //     rating: "6.9",
-    //     title: "Space Dogg",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/d9b1/c0d7/d14a24b806271aee27997170978ff626?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MJLPlmjH-ZH2cPWHRlzeF2mkO-FENUHpt5JvN3K29xAFT8Ww5PaT1vkoH2~s7S1o9PdBVL7WIUD3SVXoWqYeNXaULj7DL~zKZAGEY7J9sQy9SpBkU-6KfwoKqKgBqd9WpjV3zP884SLjBR1uk7JFbKaS9dM6aLJa8ihx17PmQiYtynIfu6zgOSnQ1NpnzO5Sy~nhXUWqsq4HGtOHSuUOHBpazHidklA7dNz1FmnNU~o2HrjAmxvXFObmJdfJR4Yle0Ke7t749UQLDp5w~vl~ZnXL9KeJgrenXu5w~TZtYTJj024q0GblLRoHG4yYg65BGWHoz0KVQFVsrh-KctQZIA__",
-    //     rating: "6.9",
-    //     title: "The Order",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/9e65/3e1b/e01fc9c4092dfdecd24369e2487d8635?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=W2zT-Cq57KFy0vpF5PUJ--WXF8LCLBEqBnQ8PUkVItEjV0W2RFX368cnDVg4nYlHFRKdgTAyX8jwfodIznV0XtAlkL9nrD-jSCOILZFYSbpv4pmd6zZGmjya2hXR21GMBq3ZF39oRTbDo1J7YFUNADw~Wb~TL8SBslDL7FG3Zjfuub2ASjtKbDhQe0gx5idbG9KjtBRJi4NPTZ7a4aGV8YLcwrXqWJSlulSl35dT0iBxmIzvE6syvE95yD3vqEyYX9V8RGtli0zX92gtlPN~7JKxwLgh2qEPC-ESXomLc~pyPTHM0DW5To8DX6TmdIuz~CObhMgjLzncegNSzBeEVw__",
-    //     rating: "6.9",
-    //     title: "Y2K",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/b356/27f6/7090bf8bfd9ce9490b6575d8d0114025?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JhRdxrMQ8UXJBqrfPkBs5wRrOK~GbcdwRWvpbW3mH1qzcV1dHl6IdvIJsVurUJEM0Y5G1d2MDqM~B5dcOuSPx9aPwcjYuEUpcW~5flXYdSkvbDLq8vGEOtH5PKEsZ7W3V7My6MZIIxn84Z5JljiqkMN9NDv4JSFFh5Q1~Ld7RtGR0ViB-Ml8o2v6afq2W0St5lwybR3W4CI93MBuPqGjIirCfvUoFF~EPRARZhfgfCI40svObKDRjHIQ20JAxOsbhYq0TyeTuS2L7H07h3KeaGEq-VxdA2IImbQsISuhKvqjt-m0rUknDmrhlpqJ57mODEPqSEqMCOOkKYbo4Omq5A__",
-    //     rating: "6.9",
-    //     title: "Solo Leveling: ReAwakening",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/3272/77d4/dd6fe464242bf3ceb00cbf7c51bd7f42?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qQrGMobH~gVpKUJMWrAO2IVuhXlHJSlGXyXIgxtHflEcwC2aATPKeglP7jgxCzDdw-MOD66OFKOd1qJRKlzVQpW5v2gcCcYaCSKSztYeSfLQjxL-14O8kBYJGsZ58E4K6Fd3k4L1v81thwoCLgP9UaccZg2vARvcSYyetLS5hVmJAS9yPZun4w1wOGtgbkm-kDlPo6GVGg9oWCKtczCiJ0xdPRsxbTMLeRWZodHCEyTfMmiIa7hpNpIxcXihtvW3y7-FfT7~SzXlEXi-JefqtDZ4qn9u5~VDjZ6v9fWvaWAXsdmUVxQdqpYuhYJMfuM8y561-vH~3qnYMbrEcfl0Gw__",
-    //     rating: "6.9",
-    //     title: "Get Away",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/1a78/359a/45da022f45cbd49977b6b63d7ecfb7c8?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hngxFLglxhjir1xLXb2OvqA6i~gjzaI760BFiOjFM6YsKvuvgLrth42FCmhEWtP~bWQjM6cW3QrLLP-wnJeV-R~p6shS5--AxeeT-~gxccu3LD1j46jpvYKXsc8v1Z1kZwuCeWc0DzrEf~GPlbPzHT6zvYb0bfp2-2nWoVLYGL8x-p8OHdGk7Lu30S3pQDX12-Y59KuFZFexa2YNb1ODsnXmS3UjXnNcmDpBYIAXNXZIXvfuLXlMJEoETtGXaDb8HjTRS2j5atE12qFYNbyzDx4-mq8E630OQrpXcwCW1SaUXVA3SaZUCh8qjhJbRekOX5MmnOZ3LRoPU6OiS1a5BA__",
-    //     rating: "6.9",
-    //     title: "Sonic the Hedgehog 3",
-    //   },
-    // ];
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col items-start w-screen px-[80px] py-[52px]",
         children: [
@@ -1007,7 +942,7 @@ const Popular_movies = ({})=>{
                         children: "Popular"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Popular_movies.tsx",
-                        lineNumber: 89,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1016,32 +951,32 @@ const Popular_movies = ({})=>{
                             "See more",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {}, void 0, false, {
                                 fileName: "[project]/src/components/Popular_movies.tsx",
-                                lineNumber: 92,
-                                columnNumber: 11
+                                lineNumber: 71,
+                                columnNumber: 45
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Popular_movies.tsx",
-                        lineNumber: 90,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Popular_movies.tsx",
-                lineNumber: 88,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: " grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 ",
-                children: popularMovies.slice(0, 10).map((value, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: Movie.map((Movie, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col items-start gap-2 rounded-lg bg-[#F4F4F5]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                 className: "w-full h-auto rounded-t-lg",
-                                src: `https://image.tmdb.org/t/p/w300${value.backdrop_path}`
+                                src: Movie.image
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Popular_movies.tsx",
-                                lineNumber: 101,
+                                lineNumber: 79,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1064,69 +999,68 @@ const Popular_movies = ({})=>{
                                                     "stroke-linejoin": "round"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Popular_movies.tsx",
-                                                    lineNumber: 114,
+                                                    lineNumber: 89,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Popular_movies.tsx",
-                                                lineNumber: 107,
+                                                lineNumber: 82,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: [
-                                                    value.vote_average,
+                                                    Movie.rating,
                                                     "/10"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Popular_movies.tsx",
-                                                lineNumber: 122,
+                                                lineNumber: 97,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Popular_movies.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 81,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-[18px] font-normal text-[#09090B]",
-                                            children: value.title
+                                            children: Movie.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Popular_movies.tsx",
-                                            lineNumber: 125,
+                                            lineNumber: 100,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Popular_movies.tsx",
-                                        lineNumber: 124,
+                                        lineNumber: 99,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Popular_movies.tsx",
-                                lineNumber: 105,
+                                lineNumber: 80,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/src/components/Popular_movies.tsx",
-                        lineNumber: 97,
+                        lineNumber: 75,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Popular_movies.tsx",
-                lineNumber: 95,
+                lineNumber: 73,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Popular_movies.tsx",
-        lineNumber: 87,
+        lineNumber: 68,
         columnNumber: 5
     }, this);
 };
-_s(Popular_movies, "zUywG5AJ7gmgd3dmY0rQazltEqU=");
 _c = Popular_movies;
 var _c;
 __turbopack_context__.k.register(_c, "Popular_movies");
@@ -1143,96 +1077,64 @@ __turbopack_context__.s({
     "Top_rated_movies": (()=>Top_rated_movies)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
-"use client";
-;
 ;
 ;
 ;
 const Top_rated_movies = ({})=>{
-    _s();
-    const [topMovies, setTopMovies] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const getTopMovies = async ()=>{
-        try {
-            const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].get("https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1&api_key=d67d8bebd0f4ff345f6505c99e9d0289");
-            setTopMovies(data.results);
-        } catch (err) {
-            console.log(err.message);
+    const Movie = [
+        {
+            image: "https://s3-alpha-sig.figma.com/img/6415/2808/0ffbeccc1a7cdd3a5199e0755d66e253?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fCQufcR3am1qiooLQaqM9Q41NfwFPOLbPAZzQ3vVA3ubkL8vXYVlOARoxW3mVGAKW10Or4rEsgbn1We-Uv7tTuXNoCKZySv1bpIdwl683L-HGFQCh2aolanzjTygbJRG8oxQTaOW~juemQwUKxKlVfDrku7eyKv7kCfb8GjtOtzOXMjPUGfQ1cPuDBT-lQ66x3KsLKXsEsvNyS04Nl-XgtKjiFq3J8vWz--Y7SKpB16xhs5medKqDLyR2gKclKWDTQHp2j3nb5xDgNcjumvVKF8BAMHiDyS~EKQBNdHZif7FuEWg4eIGY97oHzVI0GbCsUbWHh0mcj~FV-FZhmU~fQ__",
+            rating: "6.9",
+            title: "Dear Santa"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/4b08/7764/bc03cf6c5fe844d5ce89f9658466dfef?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VxBf6a0UyNNWI2Ef8E9MKlxZyc7jcRh-qGeLDOkVM5XhV1f~sVYxwSFoidjGrQXETt45YTjmIScYqZSvyuzwmi4qgBT5YAPnS9NSSjWBqWpSONfypvg3GL6l6SDn2mxOqJ1hlrtm6BSm8Dxh8Is5UH3D96O91AeEBtziVQkE8UXZxn51XGJbKR8haCM1Y9G~649PPFyWcnVO4BZHnDC31L8sm8a11VDPZDoo4LaP5cLeHgWkb4MO3DeHYsIqG-xMZ4B9yy5ffhL86UEuULXd5okztHFp1lEGdKTrARjAVR-4~5O5RGFjsm1Hr7G9ACqNPXJZD9dtt8ixIK8w0D7Zlw__",
+            rating: "6.9",
+            title: "How to Train Your Dragon Live Action"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/7aa1/1575/96c5c5026e3cccbd4a9ca91b9d63dc7a?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TVUi4evCaWv5DXCkFcCXhK5a7XqGLRmAZ46uJH1yM-Fvt~EQO~x3pvBs-s1NXOhAYDjpUlbOSlxEvu0qGD57d4VrRTCnAduwbs0mxFf0XrFpCnOA5Yt0Z3zOCtbnrr4uPJc9aI~O75AITvlCwxdGsFkTgJfdO9nna51yGU-NKXwsjijsbuumFxUJmGULzs5dUbvEW-zBHN2ndMv~eM2QSY0CidjLVlvxQ2il8o8ppwYjVcrskJdifcewBLBgDJTkSID-kb~gxp2lj1Kt75UebcktxFj6yKftUrfgywB1-slsmVEV0J1DftM00LXqF9Y2T1EGuq8XFxug-QkftbReyg__",
+            rating: "6.9",
+            title: "Alien Romulus"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/a2ea/3dd2/e396dc1c5e4ace3bda976b474aaef0b3?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LmSRrZdSQ4fvHueiig5LxUblDy9QDnu6n0E9qjEYU4SB1cC4ZxO0nfnzoSC5nPJkfjMlrHY1SdUB6~Eb0heV1S31tD~18qCRsatCoxrbEFMGCmeTXRvtoU~S6ICXR6bplFR45mNqSKQDvUNEkIHEYMF~h0ryW9VulLl9XoZxBQy~z113TYtY9aYz7ATv~xiwah4fux~v7jAZbGzBF1Xv9uEx4IrN-zV0HD8lS9mA704MwbTY3V7eOie9kKJzEErMVaI5n6zP~b1GkYhAH7kolvToDYZINF6Z2~iL~M7YVfB8V2vVuqkM7nqXzqKRjMCFjUc0u0sIfhOMwehMnwwh-w__",
+            rating: "6.9",
+            title: "From the Ashes"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/4225/7c9e/0fafe04642928fbdc70a93ae0f01002d?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cbb2m1HJmmL7XhKZeu0jrrb-Vzvg8huUbr6E6Abr6tD8f7srS6WVZMaBJyOs1XPkOFTFu-G6O21HG4dUFsnqeqvu-046LbBZcBPe54gSKZMRLhFz40LI0RYs5ZBxMZ~MLIbSoLj-u1c~vymdOCj6RQz-UXndfwRAnHB1r5fDhUDX4MPuvVK5yk5fj2i1iYl-g19Qa4q6aof6xsuLjVKfJyK3-ruSMev5YhAH1z26Z--4wtBHMaJm98J3AjnmXG3srTeVUMimrobyQ4pFtg8L9IQUijLSoFovNwLAfz6Q5DtAz~Ml~V5aY64jdFgOFLv-c0-M8WWT8iuQXYnE3Q8Znw__",
+            rating: "6.9",
+            title: "Space Dogg"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/d9b1/c0d7/d14a24b806271aee27997170978ff626?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MJLPlmjH-ZH2cPWHRlzeF2mkO-FENUHpt5JvN3K29xAFT8Ww5PaT1vkoH2~s7S1o9PdBVL7WIUD3SVXoWqYeNXaULj7DL~zKZAGEY7J9sQy9SpBkU-6KfwoKqKgBqd9WpjV3zP884SLjBR1uk7JFbKaS9dM6aLJa8ihx17PmQiYtynIfu6zgOSnQ1NpnzO5Sy~nhXUWqsq4HGtOHSuUOHBpazHidklA7dNz1FmnNU~o2HrjAmxvXFObmJdfJR4Yle0Ke7t749UQLDp5w~vl~ZnXL9KeJgrenXu5w~TZtYTJj024q0GblLRoHG4yYg65BGWHoz0KVQFVsrh-KctQZIA__",
+            rating: "6.9",
+            title: "The Order"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/9e65/3e1b/e01fc9c4092dfdecd24369e2487d8635?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=W2zT-Cq57KFy0vpF5PUJ--WXF8LCLBEqBnQ8PUkVItEjV0W2RFX368cnDVg4nYlHFRKdgTAyX8jwfodIznV0XtAlkL9nrD-jSCOILZFYSbpv4pmd6zZGmjya2hXR21GMBq3ZF39oRTbDo1J7YFUNADw~Wb~TL8SBslDL7FG3Zjfuub2ASjtKbDhQe0gx5idbG9KjtBRJi4NPTZ7a4aGV8YLcwrXqWJSlulSl35dT0iBxmIzvE6syvE95yD3vqEyYX9V8RGtli0zX92gtlPN~7JKxwLgh2qEPC-ESXomLc~pyPTHM0DW5To8DX6TmdIuz~CObhMgjLzncegNSzBeEVw__",
+            rating: "6.9",
+            title: "Y2K"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/b356/27f6/7090bf8bfd9ce9490b6575d8d0114025?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JhRdxrMQ8UXJBqrfPkBs5wRrOK~GbcdwRWvpbW3mH1qzcV1dHl6IdvIJsVurUJEM0Y5G1d2MDqM~B5dcOuSPx9aPwcjYuEUpcW~5flXYdSkvbDLq8vGEOtH5PKEsZ7W3V7My6MZIIxn84Z5JljiqkMN9NDv4JSFFh5Q1~Ld7RtGR0ViB-Ml8o2v6afq2W0St5lwybR3W4CI93MBuPqGjIirCfvUoFF~EPRARZhfgfCI40svObKDRjHIQ20JAxOsbhYq0TyeTuS2L7H07h3KeaGEq-VxdA2IImbQsISuhKvqjt-m0rUknDmrhlpqJ57mODEPqSEqMCOOkKYbo4Omq5A__",
+            rating: "6.9",
+            title: "Solo Leveling: ReAwakening"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/3272/77d4/dd6fe464242bf3ceb00cbf7c51bd7f42?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qQrGMobH~gVpKUJMWrAO2IVuhXlHJSlGXyXIgxtHflEcwC2aATPKeglP7jgxCzDdw-MOD66OFKOd1qJRKlzVQpW5v2gcCcYaCSKSztYeSfLQjxL-14O8kBYJGsZ58E4K6Fd3k4L1v81thwoCLgP9UaccZg2vARvcSYyetLS5hVmJAS9yPZun4w1wOGtgbkm-kDlPo6GVGg9oWCKtczCiJ0xdPRsxbTMLeRWZodHCEyTfMmiIa7hpNpIxcXihtvW3y7-FfT7~SzXlEXi-JefqtDZ4qn9u5~VDjZ6v9fWvaWAXsdmUVxQdqpYuhYJMfuM8y561-vH~3qnYMbrEcfl0Gw__",
+            rating: "6.9",
+            title: "Get Away"
+        },
+        {
+            image: "https://s3-alpha-sig.figma.com/img/1a78/359a/45da022f45cbd49977b6b63d7ecfb7c8?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hngxFLglxhjir1xLXb2OvqA6i~gjzaI760BFiOjFM6YsKvuvgLrth42FCmhEWtP~bWQjM6cW3QrLLP-wnJeV-R~p6shS5--AxeeT-~gxccu3LD1j46jpvYKXsc8v1Z1kZwuCeWc0DzrEf~GPlbPzHT6zvYb0bfp2-2nWoVLYGL8x-p8OHdGk7Lu30S3pQDX12-Y59KuFZFexa2YNb1ODsnXmS3UjXnNcmDpBYIAXNXZIXvfuLXlMJEoETtGXaDb8HjTRS2j5atE12qFYNbyzDx4-mq8E630OQrpXcwCW1SaUXVA3SaZUCh8qjhJbRekOX5MmnOZ3LRoPU6OiS1a5BA__",
+            rating: "6.9",
+            title: "Sonic the Hedgehog 3"
         }
-    };
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Top_rated_movies.useEffect": ()=>{
-            getTopMovies();
-        }
-    }["Top_rated_movies.useEffect"], []);
-    console.log(topMovies);
-    // const Movie = [
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/6415/2808/0ffbeccc1a7cdd3a5199e0755d66e253?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fCQufcR3am1qiooLQaqM9Q41NfwFPOLbPAZzQ3vVA3ubkL8vXYVlOARoxW3mVGAKW10Or4rEsgbn1We-Uv7tTuXNoCKZySv1bpIdwl683L-HGFQCh2aolanzjTygbJRG8oxQTaOW~juemQwUKxKlVfDrku7eyKv7kCfb8GjtOtzOXMjPUGfQ1cPuDBT-lQ66x3KsLKXsEsvNyS04Nl-XgtKjiFq3J8vWz--Y7SKpB16xhs5medKqDLyR2gKclKWDTQHp2j3nb5xDgNcjumvVKF8BAMHiDyS~EKQBNdHZif7FuEWg4eIGY97oHzVI0GbCsUbWHh0mcj~FV-FZhmU~fQ__",
-    //     rating: "6.9",
-    //     title: "Dear Santa",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/4b08/7764/bc03cf6c5fe844d5ce89f9658466dfef?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VxBf6a0UyNNWI2Ef8E9MKlxZyc7jcRh-qGeLDOkVM5XhV1f~sVYxwSFoidjGrQXETt45YTjmIScYqZSvyuzwmi4qgBT5YAPnS9NSSjWBqWpSONfypvg3GL6l6SDn2mxOqJ1hlrtm6BSm8Dxh8Is5UH3D96O91AeEBtziVQkE8UXZxn51XGJbKR8haCM1Y9G~649PPFyWcnVO4BZHnDC31L8sm8a11VDPZDoo4LaP5cLeHgWkb4MO3DeHYsIqG-xMZ4B9yy5ffhL86UEuULXd5okztHFp1lEGdKTrARjAVR-4~5O5RGFjsm1Hr7G9ACqNPXJZD9dtt8ixIK8w0D7Zlw__",
-    //     rating: "6.9",
-    //     title: "How to Train Your Dragon Live Action",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/7aa1/1575/96c5c5026e3cccbd4a9ca91b9d63dc7a?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TVUi4evCaWv5DXCkFcCXhK5a7XqGLRmAZ46uJH1yM-Fvt~EQO~x3pvBs-s1NXOhAYDjpUlbOSlxEvu0qGD57d4VrRTCnAduwbs0mxFf0XrFpCnOA5Yt0Z3zOCtbnrr4uPJc9aI~O75AITvlCwxdGsFkTgJfdO9nna51yGU-NKXwsjijsbuumFxUJmGULzs5dUbvEW-zBHN2ndMv~eM2QSY0CidjLVlvxQ2il8o8ppwYjVcrskJdifcewBLBgDJTkSID-kb~gxp2lj1Kt75UebcktxFj6yKftUrfgywB1-slsmVEV0J1DftM00LXqF9Y2T1EGuq8XFxug-QkftbReyg__",
-    //     rating: "6.9",
-    //     title: "Alien Romulus",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/a2ea/3dd2/e396dc1c5e4ace3bda976b474aaef0b3?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LmSRrZdSQ4fvHueiig5LxUblDy9QDnu6n0E9qjEYU4SB1cC4ZxO0nfnzoSC5nPJkfjMlrHY1SdUB6~Eb0heV1S31tD~18qCRsatCoxrbEFMGCmeTXRvtoU~S6ICXR6bplFR45mNqSKQDvUNEkIHEYMF~h0ryW9VulLl9XoZxBQy~z113TYtY9aYz7ATv~xiwah4fux~v7jAZbGzBF1Xv9uEx4IrN-zV0HD8lS9mA704MwbTY3V7eOie9kKJzEErMVaI5n6zP~b1GkYhAH7kolvToDYZINF6Z2~iL~M7YVfB8V2vVuqkM7nqXzqKRjMCFjUc0u0sIfhOMwehMnwwh-w__",
-    //     rating: "6.9",
-    //     title: "From the Ashes",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/4225/7c9e/0fafe04642928fbdc70a93ae0f01002d?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=cbb2m1HJmmL7XhKZeu0jrrb-Vzvg8huUbr6E6Abr6tD8f7srS6WVZMaBJyOs1XPkOFTFu-G6O21HG4dUFsnqeqvu-046LbBZcBPe54gSKZMRLhFz40LI0RYs5ZBxMZ~MLIbSoLj-u1c~vymdOCj6RQz-UXndfwRAnHB1r5fDhUDX4MPuvVK5yk5fj2i1iYl-g19Qa4q6aof6xsuLjVKfJyK3-ruSMev5YhAH1z26Z--4wtBHMaJm98J3AjnmXG3srTeVUMimrobyQ4pFtg8L9IQUijLSoFovNwLAfz6Q5DtAz~Ml~V5aY64jdFgOFLv-c0-M8WWT8iuQXYnE3Q8Znw__",
-    //     rating: "6.9",
-    //     title: "Space Dogg",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/d9b1/c0d7/d14a24b806271aee27997170978ff626?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MJLPlmjH-ZH2cPWHRlzeF2mkO-FENUHpt5JvN3K29xAFT8Ww5PaT1vkoH2~s7S1o9PdBVL7WIUD3SVXoWqYeNXaULj7DL~zKZAGEY7J9sQy9SpBkU-6KfwoKqKgBqd9WpjV3zP884SLjBR1uk7JFbKaS9dM6aLJa8ihx17PmQiYtynIfu6zgOSnQ1NpnzO5Sy~nhXUWqsq4HGtOHSuUOHBpazHidklA7dNz1FmnNU~o2HrjAmxvXFObmJdfJR4Yle0Ke7t749UQLDp5w~vl~ZnXL9KeJgrenXu5w~TZtYTJj024q0GblLRoHG4yYg65BGWHoz0KVQFVsrh-KctQZIA__",
-    //     rating: "6.9",
-    //     title: "The Order",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/9e65/3e1b/e01fc9c4092dfdecd24369e2487d8635?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=W2zT-Cq57KFy0vpF5PUJ--WXF8LCLBEqBnQ8PUkVItEjV0W2RFX368cnDVg4nYlHFRKdgTAyX8jwfodIznV0XtAlkL9nrD-jSCOILZFYSbpv4pmd6zZGmjya2hXR21GMBq3ZF39oRTbDo1J7YFUNADw~Wb~TL8SBslDL7FG3Zjfuub2ASjtKbDhQe0gx5idbG9KjtBRJi4NPTZ7a4aGV8YLcwrXqWJSlulSl35dT0iBxmIzvE6syvE95yD3vqEyYX9V8RGtli0zX92gtlPN~7JKxwLgh2qEPC-ESXomLc~pyPTHM0DW5To8DX6TmdIuz~CObhMgjLzncegNSzBeEVw__",
-    //     rating: "6.9",
-    //     title: "Y2K",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/b356/27f6/7090bf8bfd9ce9490b6575d8d0114025?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JhRdxrMQ8UXJBqrfPkBs5wRrOK~GbcdwRWvpbW3mH1qzcV1dHl6IdvIJsVurUJEM0Y5G1d2MDqM~B5dcOuSPx9aPwcjYuEUpcW~5flXYdSkvbDLq8vGEOtH5PKEsZ7W3V7My6MZIIxn84Z5JljiqkMN9NDv4JSFFh5Q1~Ld7RtGR0ViB-Ml8o2v6afq2W0St5lwybR3W4CI93MBuPqGjIirCfvUoFF~EPRARZhfgfCI40svObKDRjHIQ20JAxOsbhYq0TyeTuS2L7H07h3KeaGEq-VxdA2IImbQsISuhKvqjt-m0rUknDmrhlpqJ57mODEPqSEqMCOOkKYbo4Omq5A__",
-    //     rating: "6.9",
-    //     title: "Solo Leveling: ReAwakening",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/3272/77d4/dd6fe464242bf3ceb00cbf7c51bd7f42?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qQrGMobH~gVpKUJMWrAO2IVuhXlHJSlGXyXIgxtHflEcwC2aATPKeglP7jgxCzDdw-MOD66OFKOd1qJRKlzVQpW5v2gcCcYaCSKSztYeSfLQjxL-14O8kBYJGsZ58E4K6Fd3k4L1v81thwoCLgP9UaccZg2vARvcSYyetLS5hVmJAS9yPZun4w1wOGtgbkm-kDlPo6GVGg9oWCKtczCiJ0xdPRsxbTMLeRWZodHCEyTfMmiIa7hpNpIxcXihtvW3y7-FfT7~SzXlEXi-JefqtDZ4qn9u5~VDjZ6v9fWvaWAXsdmUVxQdqpYuhYJMfuM8y561-vH~3qnYMbrEcfl0Gw__",
-    //     rating: "6.9",
-    //     title: "Get Away",
-    //   },
-    //   {
-    //     image:
-    //       "https://s3-alpha-sig.figma.com/img/1a78/359a/45da022f45cbd49977b6b63d7ecfb7c8?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hngxFLglxhjir1xLXb2OvqA6i~gjzaI760BFiOjFM6YsKvuvgLrth42FCmhEWtP~bWQjM6cW3QrLLP-wnJeV-R~p6shS5--AxeeT-~gxccu3LD1j46jpvYKXsc8v1Z1kZwuCeWc0DzrEf~GPlbPzHT6zvYb0bfp2-2nWoVLYGL8x-p8OHdGk7Lu30S3pQDX12-Y59KuFZFexa2YNb1ODsnXmS3UjXnNcmDpBYIAXNXZIXvfuLXlMJEoETtGXaDb8HjTRS2j5atE12qFYNbyzDx4-mq8E630OQrpXcwCW1SaUXVA3SaZUCh8qjhJbRekOX5MmnOZ3LRoPU6OiS1a5BA__",
-    //     rating: "6.9",
-    //     title: "Sonic the Hedgehog 3",
-    //   },
-    // ];
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col items-start w-screen px-[80px] py-[52px]",
         children: [
@@ -1244,7 +1146,7 @@ const Top_rated_movies = ({})=>{
                         children: "Top rated"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Top_rated_movies.tsx",
-                        lineNumber: 89,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1253,32 +1155,32 @@ const Top_rated_movies = ({})=>{
                             "See more",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {}, void 0, false, {
                                 fileName: "[project]/src/components/Top_rated_movies.tsx",
-                                lineNumber: 92,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Top_rated_movies.tsx",
-                        lineNumber: 90,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Top_rated_movies.tsx",
-                lineNumber: 88,
+                lineNumber: 69,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: " grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 ",
-                children: topMovies.slice(0, 10).map((Movie, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: Movie.map((Movie, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col items-start gap-2 rounded-lg bg-[#F4F4F5]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                 className: "w-full h-auto rounded-t-lg",
-                                src: `https://image.tmdb.org/t/p/w300${Movie.backdrop_path}`
+                                src: Movie.image
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Top_rated_movies.tsx",
-                                lineNumber: 101,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1301,28 +1203,28 @@ const Top_rated_movies = ({})=>{
                                                     "stroke-linejoin": "round"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Top_rated_movies.tsx",
-                                                    lineNumber: 114,
+                                                    lineNumber: 92,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Top_rated_movies.tsx",
-                                                lineNumber: 107,
+                                                lineNumber: 85,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: [
-                                                    Movie.vote_average,
+                                                    Movie.rating,
                                                     "/10"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Top_rated_movies.tsx",
-                                                lineNumber: 122,
+                                                lineNumber: 100,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Top_rated_movies.tsx",
-                                        lineNumber: 106,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1331,39 +1233,38 @@ const Top_rated_movies = ({})=>{
                                             children: Movie.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Top_rated_movies.tsx",
-                                            lineNumber: 125,
+                                            lineNumber: 103,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Top_rated_movies.tsx",
-                                        lineNumber: 124,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Top_rated_movies.tsx",
-                                lineNumber: 105,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, index, true, {
                         fileName: "[project]/src/components/Top_rated_movies.tsx",
-                        lineNumber: 97,
+                        lineNumber: 78,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/components/Top_rated_movies.tsx",
-                lineNumber: 95,
+                lineNumber: 76,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Top_rated_movies.tsx",
-        lineNumber: 87,
+        lineNumber: 68,
         columnNumber: 5
     }, this);
 };
-_s(Top_rated_movies, "dXsQZ+sPI8bl1rn4PKgW8faXb2Y=");
 _c = Top_rated_movies;
 var _c;
 __turbopack_context__.k.register(_c, "Top_rated_movies");
@@ -2293,6 +2194,183 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
+"[project]/src/components/ui/pagination.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "Pagination": (()=>Pagination),
+    "PaginationContent": (()=>PaginationContent),
+    "PaginationEllipsis": (()=>PaginationEllipsis),
+    "PaginationItem": (()=>PaginationItem),
+    "PaginationLink": (()=>PaginationLink),
+    "PaginationNext": (()=>PaginationNext),
+    "PaginationPrevious": (()=>PaginationPrevious)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeftIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-left.js [app-client] (ecmascript) <export default as ChevronLeftIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRightIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRightIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontalIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/ellipsis.js [app-client] (ecmascript) <export default as MoreHorizontalIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/button.tsx [app-client] (ecmascript)");
+;
+;
+;
+;
+function Pagination({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+        role: "navigation",
+        "aria-label": "pagination",
+        "data-slot": "pagination",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("mx-auto flex w-full justify-center", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/pagination.tsx",
+        lineNumber: 13,
+        columnNumber: 5
+    }, this);
+}
+_c = Pagination;
+function PaginationContent({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+        "data-slot": "pagination-content",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-row items-center gap-1", className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/pagination.tsx",
+        lineNumber: 28,
+        columnNumber: 5
+    }, this);
+}
+_c1 = PaginationContent;
+function PaginationItem({ ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+        "data-slot": "pagination-item",
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/pagination.tsx",
+        lineNumber: 37,
+        columnNumber: 10
+    }, this);
+}
+_c2 = PaginationItem;
+function PaginationLink({ className, isActive, size = "icon", ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+        "aria-current": isActive ? "page" : undefined,
+        "data-slot": "pagination-link",
+        "data-active": isActive,
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["buttonVariants"])({
+            variant: isActive ? "outline" : "ghost",
+            size
+        }), className),
+        ...props
+    }, void 0, false, {
+        fileName: "[project]/src/components/ui/pagination.tsx",
+        lineNumber: 52,
+        columnNumber: 5
+    }, this);
+}
+_c3 = PaginationLink;
+function PaginationPrevious({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PaginationLink, {
+        "aria-label": "Go to previous page",
+        size: "default",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("gap-1 px-2.5 sm:pl-2.5", className),
+        ...props,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeftIcon$3e$__["ChevronLeftIcon"], {}, void 0, false, {
+                fileName: "[project]/src/components/ui/pagination.tsx",
+                lineNumber: 79,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "hidden sm:block",
+                children: "Previous"
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/pagination.tsx",
+                lineNumber: 80,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ui/pagination.tsx",
+        lineNumber: 73,
+        columnNumber: 5
+    }, this);
+}
+_c4 = PaginationPrevious;
+function PaginationNext({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(PaginationLink, {
+        "aria-label": "Go to next page",
+        size: "default",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("gap-1 px-2.5 sm:pr-2.5", className),
+        ...props,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "hidden sm:block",
+                children: "Next"
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/pagination.tsx",
+                lineNumber: 96,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRightIcon$3e$__["ChevronRightIcon"], {}, void 0, false, {
+                fileName: "[project]/src/components/ui/pagination.tsx",
+                lineNumber: 97,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ui/pagination.tsx",
+        lineNumber: 90,
+        columnNumber: 5
+    }, this);
+}
+_c5 = PaginationNext;
+function PaginationEllipsis({ className, ...props }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+        "aria-hidden": true,
+        "data-slot": "pagination-ellipsis",
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex size-9 items-center justify-center", className),
+        ...props,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreHorizontalIcon$3e$__["MoreHorizontalIcon"], {
+                className: "size-4"
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/pagination.tsx",
+                lineNumber: 113,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "sr-only",
+                children: "More pages"
+            }, void 0, false, {
+                fileName: "[project]/src/components/ui/pagination.tsx",
+                lineNumber: 114,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/ui/pagination.tsx",
+        lineNumber: 107,
+        columnNumber: 5
+    }, this);
+}
+_c6 = PaginationEllipsis;
+;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6;
+__turbopack_context__.k.register(_c, "Pagination");
+__turbopack_context__.k.register(_c1, "PaginationContent");
+__turbopack_context__.k.register(_c2, "PaginationItem");
+__turbopack_context__.k.register(_c3, "PaginationLink");
+__turbopack_context__.k.register(_c4, "PaginationPrevious");
+__turbopack_context__.k.register(_c5, "PaginationNext");
+__turbopack_context__.k.register(_c6, "PaginationEllipsis");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
 "[project]/src/app/page.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -2308,7 +2386,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Popular
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Top_rated_movies$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Top_rated_movies.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navigation$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Navigation.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/Footer.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/pagination.tsx [app-client] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -2321,44 +2401,109 @@ function Home() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Navigation$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Navigation"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 12,
+                lineNumber: 20,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Upcoming$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Upcoming"], {}, void 0, false, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 14,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 13,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Movies_upcoming$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Movies_upcoming"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 16,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Popular_movies$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Popular_movies"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 17,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Top_rated_movies$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Top_rated_movies"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 18,
+                lineNumber: 26,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Pagination"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PaginationContent"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PaginationItem"], {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PaginationPrevious"], {
+                                href: "#"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 30,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 29,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PaginationItem"], {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PaginationLink"], {
+                                href: "#",
+                                children: "1"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 33,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 32,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PaginationItem"], {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PaginationEllipsis"], {}, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 36,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PaginationItem"], {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PaginationNext"], {
+                                href: "#"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 39,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/page.tsx",
+                            lineNumber: 38,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/page.tsx",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/page.tsx",
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Footer"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 19,
+                lineNumber: 44,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 11,
+        lineNumber: 19,
         columnNumber: 5
     }, this);
 }
@@ -2371,4 +2516,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }}),
 }]);
 
-//# sourceMappingURL=src_38590dda._.js.map
+//# sourceMappingURL=src_fdef2404._.js.map

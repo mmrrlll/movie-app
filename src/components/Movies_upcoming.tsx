@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import axios from "axios";
+import { Card } from "./Card";
+import { useRouter } from "next/navigation";
 
 export const Movies_upcoming = ({}) => {
   const [upcomingMovies, setUpcomingMovies] = useState([]);
@@ -86,7 +88,10 @@ export const Movies_upcoming = ({}) => {
   //     title: "Sonic the Hedgehog 3",
   //   },
   // ];
-
+  const router = useRouter();
+  const handleOnClock = (id: number) => {
+    router.push(`details/${id}`);
+  };
   return (
     <div className="flex flex-col items-start w-screen px-[80px] py-[52px]">
       <div className="w-full mb-4 flex justify-between items-center ">
@@ -96,42 +101,17 @@ export const Movies_upcoming = ({}) => {
           <ArrowRight />
         </Button>
       </div>
-      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 ">
+      <div className=" gap-4 ">
         {upcomingMovies.slice(0, 10).map((value: any, index: number) => (
-          <div
+          <Card
+            jumpToDetails={() => {
+              handleOnClock(value.id);
+            }}
             key={index}
-            className="flex flex-col items-start gap-2 rounded-lg bg-[#F4F4F5] min-h-[435px]"
-          >
-            <img
-              className="w-full min-h-[340px] rounded-t-lg"
-              src={`https://image.tmdb.org/t/p/w300${value.backdrop_path}`}
-            ></img>
-            <div className="flex p-2 flex-col max-h-[95px]">
-              <div className="flex items-center gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M7.99967 1.3335L10.0597 5.50683L14.6663 6.18016L11.333 9.42683L12.1197 14.0135L7.99967 11.8468L3.87967 14.0135L4.66634 9.42683L1.33301 6.18016L5.93967 5.50683L7.99967 1.3335Z"
-                    fill="#FDE047"
-                    stroke="#FDE047"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p>{value.vote_average}/10</p>
-              </div>
-              <div>
-                <p className="text-[18px] font-normal text-[#09090B]">
-                  {value.title}
-                </p>
-              </div>
-            </div>
-          </div>
+            title={value.title}
+            image={`https://image.tmdb.org/t/p/w300${value.backdrop_path}`}
+            rate={value.vote_average}
+          ></Card>
         ))}
       </div>
     </div>

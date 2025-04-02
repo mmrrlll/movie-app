@@ -5,6 +5,7 @@ import { Popular_movies } from "@/components/Popular_movies";
 import { Top_rated_movies } from "@/components/Top_rated_movies";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Card } from "@/components/Card";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Popular_movies />
       <Top_rated_movies />
       <Footer />
+
     </div>
   );
 }
